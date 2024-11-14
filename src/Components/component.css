@@ -1,0 +1,279 @@
+button {
+  border: none !important;
+}
+
+.home-search-section {
+  height: 100px;
+  background-color: #121212;
+  border-radius: 8px;
+}
+.header-text {
+  display: none;
+}
+.library-playlist-section {
+  background-color: #121212;
+  border-radius: 8px;
+  height: calc(90vh - 124px);
+}
+
+.create-playlist-card {
+  background-color: #242424;
+  border-radius: 8px;
+}
+
+.create-playlist-card > p {
+  font-size: 14px;
+}
+
+.song-name-desc > p {
+  font-size: 14px;
+}
+.player-btn-group img:hover {
+  cursor: pointer;
+  filter: brightness(100%);
+}
+.player-btn-group img {
+  filter: brightness(50%);
+}
+.song-name {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.song-artist {
+  font-size: 14px;
+  color: #b3b3b3;
+  font-weight: 400;
+}
+.library-playlist-section {
+  cursor: pointer;
+}
+.seek-bar {
+  width: 100%;
+  height: 4px;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.seek-bar > hr {
+  opacity: 1;
+  height: 4px;
+  background-color: #ffffff;
+  width: 0;
+  border: none;
+  transition: 0.3s linear;
+}
+
+.volume-bar {
+  max-width: 100px;
+  width: 100%;
+  height: 4px;
+  background-color: gray;
+  cursor: pointer;
+}
+.volume-bar > hr {
+  opacity: 1;
+  width: 100%;
+  height: 4px;
+  background-color: #00d9ff;
+  border: none;
+}
+.playlist-desc {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.navigation-icon > img {
+  background-color: #242424;
+  cursor: pointer;
+  width: 20%;
+  background: linear-gradient();
+}
+
+.hero-section {
+  border-radius: 8px;
+  width: 100%;
+  background-color: #121212;
+}
+.profile-icon-bg {
+  background-color: #6c6c6c;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-icon-bg:hover {
+  background-color: #b5b5b5;
+}
+.profile-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #3e32c6;
+  position: relative;
+  cursor: pointer;
+}
+.profile-icon:has(img) {
+  width: 30px;
+  height: 30px;
+}
+.profile-icon:has(img) img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.dropdown-menu {
+  position: absolute;
+  right: 10px;
+  width: max-content;
+}
+.swiper-slide {
+  width: 180px !important;
+  height: 100% !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+.bell-icon {
+  width: 30px;
+  text-align: center;
+  background-color: #000000;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.truncate {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn-music,
+.btn-podcasts {
+  background-color: #242424 !important;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 769px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+.song-cards {
+  min-width: 180px;
+  cursor: pointer;
+  max-width: 200px;
+  height: 250px;
+  max-height: 250px;
+}
+
+.song-cards img {
+  max-height: 148px;
+  object-fit: cover;
+}
+.song-cards:hover {
+  background-color: #ffffff26;
+}
+
+.songlist > div:hover {
+  background-color: #ffffff2b;
+  .add-to-playlist {
+    display: block;
+  }
+}
+
+.show-all {
+  background-color: #242424;
+}
+/* loader */
+
+.spinner {
+  --clr: rgb(0, 113, 128);
+  --gap: 6px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.spinner span {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: var(--clr);
+  opacity: 0;
+}
+
+.spinner span:nth-child(1) {
+  animation: fade 1s ease-in-out infinite;
+}
+
+.spinner span:nth-child(2) {
+  animation: fade 1s ease-in-out 0.33s infinite;
+}
+
+.spinner span:nth-child(3) {
+  animation: fade 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .side-bar-container {
+    display: none !important;
+  }
+  .hero-section {
+    margin: 0rem !important;
+    border-radius: 0px;
+  }
+  .hero-section > :not(.navbar) {
+    padding: 5px;
+  }
+  .filter-btn {
+    display: none !important;
+  }
+  .header-text {
+    display: block;
+  }
+  .playlist-head {
+    padding-inline: 5px;
+    margin-inline: -5px;
+  }
+}
